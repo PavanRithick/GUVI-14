@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        #calculator {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        #display {
+            height: 60px;
+            font-size: 24px;
+            text-align: right;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            width: 100%;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div id="calculator" class="mt-5">
+    <h2 class="text-center">Calculator</h2>
+    <div id="display"></div>
+    <div id="buttons" class="d-grid">
+        <div class="row">
+            <div class="col"><button class="btn btn-light" data-value="7">7</button></div>
+            <div class="col"><button class="btn btn-light" data-value="8">8</button></div>
+            <div class="col"><button class="btn btn-light" data-value="9">9</button></div>
+            <div class="col"><button class="btn btn-warning" data-value="/">/</button></div>
+        </div>
+        <div class="row">
+            <div class="col"><button class="btn btn-light" data-value="4">4</button></div>
+            <div class="col"><button class="btn btn-light" data-value="5">5</button></div>
+            <div class="col"><button class="btn btn-light" data-value="6">6</button></div>
+            <div class="col"><button class="btn btn-warning" data-value="*">*</button></div>
+        </div>
+        <div class="row">
+            <div class="col"><button class="btn btn-light" data-value="1">1</button></div>
+            <div class="col"><button class="btn btn-light" data-value="2">2</button></div>
+            <div class="col"><button class="btn btn-light" data-value="3">3</button></div>
+            <div class="col"><button class="btn btn-warning" data-value="-">-</button></div>
+        </div>
+        <div class="row">
+            <div class="col"><button class="btn btn-light" data-value="0">0</button></div>
+            <div class="col"><button class="btn btn-primary" id="calculate">=</button></div>
+            <div class="col"><button class="btn btn-warning" data-value="+">+</button></div>
+        </div>
+        <div class="row">
+            <div class="col-12"><button class="btn btn-danger" id="clear">C</button></div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
